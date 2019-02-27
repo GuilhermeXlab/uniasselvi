@@ -19,8 +19,8 @@ if ($conexao->connect_error) {
 $nome = $_GET["nome"];
 // Insere o hábito na tabela
 // habito do banco de dados
-$sql = "INSERT INTO habito (nome)
-VALUES ('".$nome."')";
+$sql = "INSERT INTO habito (nome, status)
+VALUES ('".$nome."', 'A')";
 // Verifica se ocorreu tudo bem
 // Caso houve erro, fecha a conexão
 // e aborta o programa
