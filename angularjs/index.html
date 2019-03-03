@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="helloworld">
+<!-- Note, na abertura da tag html acima
+a utilização da diretiva ng-app. -->
+<head>
+<!-- Fique atento a ordem de inclusão dos
+arquivos javascript abaixo -->
+<!-- Note também que se você estiver utilizando
+o arquivo angular.min.js, o mesmo deve ser referenciado
+Porém se você estiver utilizando o arquivo angular.js
+então este deve ser referenciado. -->
+<script type="text/javascript" src="./lib/angular.min.js"></script>
+<script type="text/javascript" src="./js/app.js"></script>
+<title>Hello World</title>
+</head>
+<!-- Note na tag body a utilização da diretiva
+ng-controller, que ligará as tags contidas
+entre a abertura e fechamento de body a um
+controller no código fonte javascript -->
+<body ng-controller="helloworldcontroller">
+<!-- Abaixo, note abaixo a utilização de uma
+expressão para imprimir o valor da variável
+de escopo msg -->
+<p>{{msg}}</p>
+</body>
+</html>
