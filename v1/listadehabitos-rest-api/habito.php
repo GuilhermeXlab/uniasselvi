@@ -110,8 +110,8 @@ $habito = f_parametro_to_habito();
 $nome = $habito["nome"];
 // Insere o hábito na tabela
 // habito do banco de dados
-$sql = "INSERT INTO habito (nome)
-VALUES ('".$nome."')";
+$sql = "INSERT INTO habito (nome, status)
+VALUES ('".$nome."', 'A')";
 // Obtem a conexão
 $conexao = f_obtem_conexao();
 // Verifica se ocorreu tudo bem

@@ -1,0 +1,31 @@
+<div class="main jumbotron">
+    <h1>Cadastrar hábitos</h1>
+    <p>
+        <label>Hábito: 
+            <input type="text" id="nome" name="nome" autofocus ng-model="nome" />
+        </label>
+    </p>
+
+    <!-- Ao clicar no botão Cadastrar a função $scope.inserirHabito é chamada-->
+    <p>
+        <button ng-click="inserirHabito(nome)" class="btn btnprimary">
+            Cadastrar
+        </button>
+    </p>
+
+    <!-- Note o link single page application!! # -->
+    <a href="#!/listadehabitos">Voltar</a>
+</div>
+
+<div class="main jumbotron">
+    <table class="table table-striped">
+        <thead>
+            <th>Hábitos</th>
+        </thead>
+        <tbody>
+            <tr ng-repeat="habito in habitos">
+                <td>{{habito.nome}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
